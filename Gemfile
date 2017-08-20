@@ -39,6 +39,13 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # RuboCop
+  gem 'rubocop', require: false, github: 'bbatsov/rubocop'
+
+  # Guard
+  gem 'guard-rubocop'
+  gem 'guard-minitest'
 end
 
 group :development do
